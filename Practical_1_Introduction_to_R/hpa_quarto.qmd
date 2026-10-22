@@ -1,0 +1,14 @@
+---
+title: "Human Protein Atlas Analysis"
+author: "Deepak Dsouza"
+---
+I am going to determine the total number of genes with regionally elevated expression in the forebrain for humans, pigs and mice, and in the process find which has the highest number
+```{r}
+human_forebrain <- sum(180, 83, 57, 110)
+pig_forebrain <- sum(109, 157, 31, 45)
+mouse_forebrain <- sum(55, 185, 60, 98)
+print(paste("Human forebrain:", human_forebrain))
+print(paste("Pig forebrain:", pig_forebrain))
+print(paste("Mouse forebrain:", mouse_forebrain))
+```
+The human forebrain had the highest number of genes with regionally elevated gene expression in the forebrain at 430.
