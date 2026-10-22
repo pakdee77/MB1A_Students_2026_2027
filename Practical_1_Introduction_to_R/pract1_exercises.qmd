@@ -1,0 +1,31 @@
+---
+title: "Practical 1 Exercises"
+author: "Deepak Dsouza"
+---
+```{r}
+round(3.14159)
+```
+```{r}
+print(rep(5, 7))
+```
+```{r}
+print(rep(x = 5, times = 7))
+```
+```{r}
+character <- "banana"
+numerical <- 57
+logical <- TRUE
+print(class(character))
+print(class(numerical))
+print(class(logical))
+```
+```{r}
+cell_id_one <- "CX1"
+cell_id_two <- "CX2"
+treated_one <- TRUE
+treated_two <- FALSE
+num_cells_before_one <- 5415
+num_cells_before_two <- 8123
+num_cells_after_one <- 1432
+num_cells_after_two <- 7543
+```
