@@ -29,3 +29,23 @@ num_cells_before_two <- 8123
 num_cells_after_one <- 1432
 num_cells_after_two <- 7543
 ```
+```{r}
+cell_id_vec <- c(cell_id_one, cell_id_two)
+treated_vec <- c(treated_one, treated_two)
+num_cells_before_vec <- c(num_cells_before_one, num_cells_before_two)
+num_cells_after_vec <- c(num_cells_after_one, num_cells_after_two)
+```
+```{r}
+all_my_pets <- c("dog", "horse", "guinea pig", "chicken", "cat")
+print(all_my_pets[4])
+```
+```{r}
+my_data_frame <- tibble(
+  cell_id = c(cell_id_one, cell_id_two),
+  treated = c(treated_one,treated_two),
+  num_cells_before = c(num_cells_before_one, num_cells_before_two),
+  num_cells_after = c(num_cells_after_one, num_cells_after_two)
+)
+gt(my_data_frame)
+```
+
