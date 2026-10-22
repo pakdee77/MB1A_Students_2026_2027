@@ -1,0 +1,27 @@
+---
+title: "UKHSA Data Analysis"
+author: "Deepak Dsouza"
+---
+I downloaded the csv data for monkeypox, and used the gt function to display the table
+```{r}
+library(tidyverse)
+library(gt)
+mpox <- read_csv("data/ukhsa-chart-download.csv")
+gt(head(mpox))
+```
+I realised this data is not for the line graph I initially saw and decided to use the rhinovirus file instead
+```{r}
+rhinovirus <- read_csv("data/ukhsa-chart-download-rhinovirus.csv")
+gt(rhinovirus)
+```
+```{r}
+ggplot(rhinovirus, aes(
+  x = date,
+  y = metric_value
+)) +
+  geom_line(colour="blue") +
+  xlab("Date") +
+  ylab("Rhinovirus Positive Testing") +
+  ggtitle("Rhinovirus Positive Testing Weekly")
+```
+
